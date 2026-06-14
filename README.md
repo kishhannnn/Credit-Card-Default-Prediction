@@ -129,8 +129,9 @@ Credit-Card-Default-Prediction/
 │
 ├── credit_card_default_prediction.ipynb
 ├── UCI_Credit_Card.csv
-├── requirements.txt
 ├── README.md
+├── requirements.txt
+├── LICENSE
 │
 └── outputs/
     ├── roc_curve_analysis.png
