@@ -4,7 +4,7 @@
 
 This project presents a comparative study of Logistic Regression and XGBoost for predicting credit card default using the UCI Credit Card Default Dataset.
 
-The objective is to identify customers who are likely to default on their next credit card payment and compare the predictive performance of both machine learning models. In addition, explainable AI techniques are used to improve transparency and interpretability of model predictions.
+The objective is to identify customers who are likely to default on their next credit card payment and compare the predictive performance of both machine learning models. Explainability techniques are also incorporated to improve transparency and interpretability of model predictions.
 
 ## Dataset
 
@@ -20,7 +20,7 @@ The objective is to identify customers who are likely to default on their next c
 * Default Cases: 6,636
 * Non-Default Cases: 23,364
 
-### Features
+### Features Included
 
 * Credit Limit Amount (LIMIT_BAL)
 * Age
@@ -58,7 +58,7 @@ The objective is to identify customers who are likely to default on their next c
 
 ### Logistic Regression
 
-Used as a baseline model because of its simplicity and interpretability.
+Used as a baseline model due to its simplicity and interpretability.
 
 ### XGBoost
 
@@ -89,12 +89,38 @@ Used to capture complex nonlinear relationships and improve predictive performan
 
 ![SHAP Summary Plot](outputs/shap_summary_plot.png)
 
+## Explainability
+
+SHAP was primarily used to provide global and local explanations for model predictions, while LIME was explored for additional interpretability analysis.
+
+The explainability framework helps identify the factors that contribute most significantly to credit default predictions.
+
 ## Key Findings
 
 * XGBoost outperformed Logistic Regression across most evaluation metrics.
-* Repayment history variables were the most influential factors in predicting default.
-* SHAP explanations improved model transparency by identifying feature contributions to predictions.
-* Explainable AI techniques help improve trust and interpretability in financial decision-making systems.
+* Repayment history variables were the most influential predictors of credit default.
+* SHAP explanations improved model transparency and interpretability.
+* Explainable AI techniques help improve trust in financial decision-making systems.
+
+## How to Run
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open and run the notebook
+
+```bash
+credit_card_default_prediction.ipynb
+```
 
 ## Repository Structure
 
